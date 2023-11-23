@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto+Mono:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto+Mono:wght@600&family=Roboto+Slab:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Style Body section */
+body {
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Slab", serif;
+}
+
+.nav-bar{
+ 
+  width: 100%;
+  height: 100%;
+margin-top: 10px;
+margin-bottom: 100px;
+  background: linear-gradient(180deg, rgba(248.32, 248.32, 248.32, 0.43) 0%, rgba(190.37, 190.37, 190.37, 0.78) 100%);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25); 
+  border-radius: 10px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo{
+  /* border: 2px solid red; */
+  height: px;
+  width: 15%;
+margin-left:15px;
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.span1{
+  color: white;
+  font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+margin-left: 12px;
+
+}
+.span2{
+  color: #FF0000;
+  font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.sub-nav{
+width: 30%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-right: 20px;
+}
+
+.explore{
+  width: 10%;
+  height: 100%;
+}
+.explore a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+.code{
+  width: 149px;
+  height: 37px;
+  border: 1px rgba(255, 255, 255, 0.73) solid;
+  background: #FF0000;
+  text-align: center;
+  box-shadow: 4px 1px 5.300000190734863px rgba(0, 0, 0, 0.25);
+ 
+}
+
+.code a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-icon{
+width: 30px;
+height: 30px;
+position: relative;
+cursor: pointer;
+
+
+}
+.profile{
+  width:40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+/* Style input box */
+#search-input {
+  width: 60%;
+  min-width: 400px;
+  height: 48px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.5rem;
+  color: #000000;
+}
+/* Search button Styling */
+#search-button {
+  padding: 10px 20px;
+  height: 48px;
+  background-color: #138065;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Search Results Section Styling */
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Individual Search item */
+.search-result {
+  margin-bottom: 60px;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+/* Search result images */
+.search-result img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opcity 0.2 ease-in-out;
+}
+
+/* After hover effect in images */
+.search-result:hover img {
+  opacity: 0.8;
+}
+
+/* Style Search imager link */
+.search-result a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Show more button Styling */
+#show-more-button {
+  background-color: #008cba;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive design for any screen size */
+
+@media screen and (max-width: 768px) {
+  .search-results {
+    padding: 20px;
+  }
+  .search-result {
+    width: 45%;
+  }
+}
+/* Design for Tablate's */
+@media only screen and (max-width: 540px) {
+  body {
+    background: #000;
+  }
+  h1 {
+    font-size: 3rem;
+    color: #1f51ff;
+  }
+  form {
+    border: 2px solid rgb(26, 151, 173) (152, 5, 5);
+    width: 100vw;
+    #search-button {
+      min-width: 30;
+      height: 45px;
+      margin-left: 0px;
+    }
+    #search-button :hover {
+      background-color: black;
+    }
+    #search-input {
+      min-width: 70%;
+      height: 45px;
+      margin-right: 0px;
+    }
+  }
+  .search-result {
+    width: 100%;
+  }
+  .search-result a {
+    color: #fff;
+  }
+}
+/* Design for Mobile Screen's */
+@media only screen and (max-width: 380px) {
+  h1 {
+    font-size: 2rem;
+    margin: 12px 10px 10px 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+
+    #search-input {
+      width: 100%;
+    }
+
+    #search-button {
+      width: 100%;
+    }
+  }
+}
+
+
+                                        /* The end  */
